@@ -1425,3 +1425,12 @@ a {
     flex-basis: 700px;
   }
 }
+
+
+
+/* Anurag's code */
+.animation-slide-left{
+  display: inline-block;
+  opacity: 1;
+}
+/* Anurag's code end */
