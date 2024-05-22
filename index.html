@@ -6,6 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shree Venkatesh Construction and Services</title>
+  <!-- Video js -->
+  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  <script defer src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+  <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
+  <!-- 
+    - custom js link
+  -->
+  <script defer src="./assets/js/script.js"></script>
 
   <!-- 
     - Animation library
@@ -32,6 +40,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Image Preload -->
+  <link rel="preload" href="./assets/images/constructionBG.jpg" as="image">
+
+
 </head>
 
 <body>
@@ -198,7 +211,7 @@
         <div class="container">
 
           <figure class="about-banner animation-slide-left">
-            <img src="./assets/images/ConstructionAbout1.png" alt="House interior">
+            <img src="./assets/images/ConstructionAbout1.png" alt="House interior" loading="lazy">
           </figure>
 
           <div class="about-content">
@@ -243,7 +256,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/core_cutting.jpg" alt="Service icon">
+                  <img src="./assets/images/core_cutting.jpg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -269,7 +282,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/breaker_work.jpg" alt="Service icon">
+                  <img src="./assets/images/breaker_work.jpg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -295,7 +308,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/Building_demolitoin.jpg" alt="Service icon">
+                  <img src="./assets/images/Building_demolitoin.jpg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -321,7 +334,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/Diamond_wire_saw.jpg" alt="Service icon">
+                  <img src="./assets/images/Diamond_wire_saw.jpg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -347,7 +360,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/Floor_cutting_work.jpg" alt="Service icon">
+                  <img src="./assets/images/Floor_cutting_work.jpg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -373,7 +386,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/concrete-groove-cutting-work.jpeg" alt="Service icon">
+                  <img src="./assets/images/concrete-groove-cutting-work.jpeg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -399,7 +412,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/Pressure_Grouting.jpeg" alt="Service icon">
+                  <img src="./assets/images/Pressure_Grouting.jpeg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -425,7 +438,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/Rebaring work.jpg" alt="Service icon">
+                  <img src="./assets/images/Rebaring work.jpg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -451,7 +464,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/wallsaw_cutting_work.jpg" alt="Service icon">
+                  <img src="./assets/images/wallsaw_cutting_work.jpg" alt="Service icon" loading="lazy">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -490,9 +503,11 @@
             <li>
               <div class="blog-card">
                 <figure class="card-banner">
-                  <video src="./assets/images/video1.mp4" class="w-100"></video>
+                  <video id="my-video" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
+                    <source src="./assets/images/video1.mp4" type="video/mp4">
+                  </video>
                 </figure>
-                <img src="./assets/images/play.png" class="play-icon" alt="Play Icon">
+                <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
                 <div class="blog-content">
                   <div class="blog-content-top">
                     <ul class="card-meta-list">
@@ -540,6 +555,7 @@
                 <figure class="card-banner">
                   <video src="./assets/images/video3.mp4" class="w-100"></video>
                 </figure>
+                <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
                 <img src="./assets/images/play.png" class="play-icon" alt="Play Icon">
                 <div class="blog-content">
                   <div class="blog-content-top">
@@ -754,52 +770,49 @@
 
 
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+  
 
   <!-- 
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-   document.addEventListener("DOMContentLoaded", function() {
-  const videos = document.querySelectorAll(".blog-card video");
-  const playIcons = document.querySelectorAll(".blog-card .play-icon");
-
-  playIcons.forEach((icon, index) => {
-    icon.addEventListener("click", function() {
-      const video = videos[index];
-      if (video.paused) {
-        video.play();
-        icon.style.display = "none";
-      } else {
-        video.pause();
-        icon.style.display = "block"; 
-      }
-
-      // Pause other videos
-      videos.forEach((v, i) => {
-        if (i !== index) {
-          v.pause();
-          playIcons[i].style.display = "block"; 
-        }
+  <!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Select all video elements and play icons
+      const videos = document.querySelectorAll(".blog-card video");
+      const playIcons = document.querySelectorAll(".blog-card .play-icon");
+  
+      // Loop through each video
+      videos.forEach((video, index) => {
+        // Add event listener for when the video is clicked
+        video.addEventListener("click", function() {
+          // If the video is paused, play it and hide the corresponding play icon
+          if (video.paused) {
+            video.play();
+            playIcons[index].style.display = "none";
+          } else {
+            // If the video is playing, pause it and show the corresponding play icon
+            video.pause();
+            playIcons[index].style.display = "block";
+          }
+        });
+  
+        // Add event listener for when the video is paused
+        video.addEventListener("pause", function() {
+          // Show the corresponding play icon
+          playIcons[index].style.display = "block";
+        });
+  
+        // Add event listener for when the video is playing
+        video.addEventListener("play", function() {
+          // Hide the corresponding play icon
+          playIcons[index].style.display = "none";
+        });
       });
     });
-
-    // Toggle play icon visibility based on video play state
-    videos[index].addEventListener("play", function() {
-      icon.style.display = "none";
-    });
-
-    videos[index].addEventListener("pause", function() {
-      icon.style.display = "block";
-    });
-  });
-});
-  </script>
+  </script> -->
+  
 </body>
 
 </html>
