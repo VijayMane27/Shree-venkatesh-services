@@ -44,88 +44,103 @@ for (let i = 0; i < navElemArr.length; i++) {
  */
 
 const header = document.querySelector("[data-header]");
- 
+
 window.addEventListener("scroll", function () {
   window.scrollY >= 400
     ? header.classList.add("active")
     : header.classList.remove("active");
 });
 
-
-
 // Anurag's Code
-const animation_from_left_elements = document.querySelectorAll('.hero-content');
+const animation_from_left_elements = document.querySelectorAll(".hero-content");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('animate__animated', 'animate__backInLeft');
-    } else {
-      setTimeout(() => {
-        entry.target.classList.remove('animate__animated', 'animate__backInLeft');
-      }, 1000); 
-    }
-  });
-}, {
-  threshold: 1,
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__animated", "animate__backInLeft");
+      } else {
+        setTimeout(() => {
+          entry.target.classList.remove(
+            "animate__animated",
+            "animate__backInLeft"
+          );
+        }, 1000);
+      }
+    });
+  },
+  {
+    threshold: 1,
+  }
+);
 
 animation_from_left_elements.forEach((el) => {
   observer.observe(el);
 });
 
 // Slide in from left
-const animation_slide_left = document.querySelectorAll('.animation-slide-left');
+const animation_slide_left = document.querySelectorAll(".animation-slide-left");
 
-const observerSlideLeft = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+const observerSlideLeft = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-          entry.target.classList.add('animate__animated', 'animate__backInLeft');
+        entry.target.classList.add("animate__animated", "animate__backInLeft");
       } else {
-          setTimeout(() => {
-              entry.target.classList.remove('animate__animated', 'animate__backInLeft');
-          }, 1000); 
+        setTimeout(() => {
+          entry.target.classList.remove(
+            "animate__animated",
+            "animate__backInLeft"
+          );
+        }, 1000);
       }
-  });
-}, {
-threshold: 0.5,
-});
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
 
 animation_slide_left.forEach((el) => {
   observerSlideLeft.observe(el);
 });
 
-
 // Service card animation
-const serviceCards = document.querySelectorAll('.service-card');
+const serviceCards = document.querySelectorAll(".service-card");
 
-const isMobile = window.matchMedia('(max-width: 768px)'); // Adjust the breakpoint as needed
+const isMobile = window.matchMedia("(max-width: 768px)"); // Adjust the breakpoint as needed
 
-const observerCard = new IntersectionObserver((entries) => {
+const observerCard = new IntersectionObserver(
+  (entries) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate__animated', 'animate__slideInLeft');
-        } else {
-            setTimeout(() => {
-                entry.target.classList.remove('animate__animated', 'animate__slideInLeft');
-            }, 1000); // Adjust the delay as necessary
-        }
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate__animated", "animate__slideInLeft");
+      } else {
+        setTimeout(() => {
+          entry.target.classList.remove(
+            "animate__animated",
+            "animate__slideInLeft"
+          );
+        }, 1000); // Adjust the delay as necessary
+      }
     });
-}, {
+  },
+  {
     threshold: 0.7,
-});
+  }
+);
 
 function checkAndObserve() {
-    if (isMobile.matches) {
-        serviceCards.forEach((el) => {
-          observerCard.observe(el);
-        });
-    } else {
-        serviceCards.forEach((el) => {
-          observerCard.unobserve(el);
-            el.classList.remove('animate__animated', 'animate__slideInLeft'); // Ensure to remove classes when exiting mobile view
-        });
-    }
+  if (isMobile.matches) {
+    serviceCards.forEach((el) => {
+      observerCard.observe(el);
+    });
+  } else {
+    serviceCards.forEach((el) => {
+      observerCard.unobserve(el);
+      el.classList.remove("animate__animated", "animate__slideInLeft"); // Ensure to remove classes when exiting mobile view
+    });
+  }
 }
 
 // Check and observe initially
@@ -134,17 +149,16 @@ checkAndObserve();
 // Add listener for viewport size changes
 isMobile.addListener(checkAndObserve);
 
+// var video = videojs("my-video1", "my-video2", "my-viedo3");
 
-var video = videojs('my-video');
+// video.on("pause", function () {
+//   this.bigPlayButton.show();
 
-video.on('pause', function() {
-  this.bigPlayButton.show();
-
-  // Now the issue is that we need to hide it again if we start playing
-  // So every time we do this, we can create a one-time listener for play events.
-  video.one('play', function() {
-    this.bigPlayButton.hide();
-  });
-});
+//   // Now the issue is that we need to hide it again if we start playing
+//   // So every time we do this, we can create a one-time listener for play events.
+//   video.one("play", function () {
+//     this.bigPlayButton.hide();
+//   });
+// });
 
 // Anurag's Code end

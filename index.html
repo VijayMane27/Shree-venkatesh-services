@@ -484,7 +484,7 @@
             <li>
               <div class="blog-card">
                 <figure class="card-banner">
-                  <video id="my-video" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
+                  <video id="my-video1" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
                     <source src="./assets/images/video1.mp4" type="video/mp4">
                   </video>
                 </figure>
@@ -510,9 +510,11 @@
             <li>
               <div class="blog-card">
                 <figure class="card-banner">
-                  <video src="./assets/images/video2.mp4" class="w-100"></video>
+                  <video id="my-video2" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
+                    <source src="./assets/images/video2.mp4" type="video/mp4">
+                  </video>
                 </figure>
-                <img src="./assets/images/play.png" class="play-icon" alt="Play Icon">
+                <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
                 <div class="blog-content">
                   <div class="blog-content-top">
                     <ul class="card-meta-list">
@@ -534,10 +536,11 @@
             <li>
               <div class="blog-card">
                 <figure class="card-banner">
-                  <video src="./assets/images/video3.mp4" class="w-100"></video>
+                  <video id="my-video" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
+                    <source src="./assets/images/video3.mp4" type="video/mp4">
+                  </video>
                 </figure>
                 <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
-                <img src="./assets/images/play.png" class="play-icon" alt="Play Icon">
                 <div class="blog-content">
                   <div class="blog-content-top">
                     <ul class="card-meta-list">
@@ -758,43 +761,7 @@
     - ionicon link
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Select all video elements and play icons
-      const videos = document.querySelectorAll(".blog-card video");
-      const playIcons = document.querySelectorAll(".blog-card .play-icon");
-  
-      // Loop through each video
-      videos.forEach((video, index) => {
-        // Add event listener for when the video is clicked
-        video.addEventListener("click", function() {
-          // If the video is paused, play it and hide the corresponding play icon
-          if (video.paused) {
-            video.play();
-            playIcons[index].style.display = "none";
-          } else {
-            // If the video is playing, pause it and show the corresponding play icon
-            video.pause();
-            playIcons[index].style.display = "block";
-          }
-        });
-  
-        // Add event listener for when the video is paused
-        video.addEventListener("pause", function() {
-          // Show the corresponding play icon
-          playIcons[index].style.display = "block";
-        });
-  
-        // Add event listener for when the video is playing
-        video.addEventListener("play", function() {
-          // Hide the corresponding play icon
-          playIcons[index].style.display = "none";
-        });
-      });
-    });
-  </script> -->
-  
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
 </body>
 
 </html>

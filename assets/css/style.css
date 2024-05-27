@@ -703,7 +703,6 @@ a {
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
-
 .blog {
   padding-block: var(--section-padding);
 }
@@ -711,23 +710,22 @@ a {
 .blog-card {
   box-shadow: var(--shadow-2);
   position: relative;
+  border-radius: 15px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensure the rounded corners are applied to child elements */
 }
 
 .blog-card .card-banner {
   overflow: hidden;
   aspect-ratio: 2 / 1.5;
+  position: relative; /* Ensure the play icon is correctly positioned */
 }
 
 .blog-card .card-banner video {
   width: 100%;
-  height: auto;
-  border-radius: 15px;
-  object-fit: contain;
+  height: 100%;
+  border-radius: inherit; /* Inherit rounded corners from the card */
+  object-fit: cover; /* Ensure the video covers the entire card without overflow */
 }
-
-/* .blog-card:hover .card-banner video {
-  transform: scale(1.1);
-} */
 
 .blog-content {
   padding: 30px;
@@ -1433,105 +1431,13 @@ a {
   opacity: 1;
 }
 
-
 .video-js {
   width: 800px;
   height: 450px;
 }
 
-.vjs-paused.vjs-has-started .vjs-big-play-button {
-  display: block;
-}
-
-.vjs-custom-theme {
-  .vjs-control-bar {
-    background-color: transparent !important;
-  }
-  .vjs-big-play-button {
-    opacity: 0 !important;
-  }
-  .vjs-volume-control {
-    align-items: center !important;
-  }
-
-  .vjs-play-progress:before {
-    top: -4px !important;
-  }
-  .vjs-fullscreen-control {
-    .vjs-icon-placeholder {
-      &:before {
-        line-height: 30px;
-      }
-    }
-  }
-  button {
-    &:hover {
-      color: #fff;
-    }
-  }
-
-  .vjs-progress-control .vjs-progress-holder {
-    margin: 0 10px;
-    background: rgba(255, 255, 255, 0.25);
-    height: 1px;
-  }
-  .vjs-progress-control {
-    &:hover {
-      .vjs-play-progress:before {
-        top: -7px !important;
-      }
-    }
-  }
-
-  .vjs-control-bar {
-    height: 54px;
-    background: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: visibility 0.1s, opacity 0.1s;
-    -o-transition: visibility 0.1s, opacity 0.1s;
-    transition: visibility 0.1s, opacity 0.1s;
-  }
-  .vjs-volume-panel {
-    -webkit-box-ordinal-group: 5;
-    -ms-flex-order: 4;
-    order: 4;
-    display: flex;
-    align-items: center;
-  }
-
-  .vjs-fullscreen-control {
-    -webkit-box-ordinal-group: 5;
-    -ms-flex-order: 5;
-    order: 5;
-  }
-  .vjs-picture-in-picture-control,
-  .vjs-remaining-time {
-    display: none;
-  }
-  .vjs-play-control {
-    width: 5em !important;
-  }
-  .vjs-play-control .vjs-icon-placeholder::before {
-    font-size: 13px;
-    letter-spacing: 0.16px;
-    content: "Play" !important;
-    font-family: sans-serif;
-    line-height: 30px;
-  }
-
-  .vjs-play-control.vjs-playing .vjs-icon-placeholder::before {
-    content: "Pause" !important;
-    font-family: sans-serif;
-  }
-}
-
-
 /* Anurag's code end */
-=======
+
 /* Anurag's code end */
 
 /* pop-up contact */
@@ -1706,4 +1612,3 @@ h4 {
   align-items: center;
   justify-content: center;
 }
-
