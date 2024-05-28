@@ -120,7 +120,7 @@ html {
 }
 
 body {
-  background: var(--white);
+  background: var(--alice-blue);
   overflow-x: hidden;
   position: relative;
 }
@@ -631,6 +631,7 @@ a {
   justify-content: center;
   gap: 30px;
   animation: fadeInUp 0.5s ease-in-out forwards;
+  perspective: 1000px; /* Added perspective to the container */
 }
 
 .service-card {
@@ -638,14 +639,15 @@ a {
   background: var(--white);
   text-align: center;
   padding: 30px 30px;
-  box-shadow: var(--shadow-2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Initial shadow */
   transform: translateY(20px);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform-style: preserve-3d; /* Ensure children are transformed in 3D space */
 }
 
 .service-card:hover {
-  transform: translateY(0);
-  box-shadow: var(--shadow-3);
+  transform: translateY(0) rotateX(10deg) rotateY(10deg); /* Added 3D rotation on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .service-card .card-icon img {

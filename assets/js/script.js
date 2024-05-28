@@ -130,18 +130,18 @@ const observerCard = new IntersectionObserver(
   }
 );
 
-function checkAndObserve() {
-  if (isMobile.matches) {
-    serviceCards.forEach((el) => {
-      observerCard.observe(el);
-    });
-  } else {
-    serviceCards.forEach((el) => {
-      observerCard.unobserve(el);
-      el.classList.remove("animate__animated", "animate__slideInLeft"); // Ensure to remove classes when exiting mobile view
-    });
-  }
-}
+// function checkAndObserve() {
+//   if (isMobile.matches) {
+//     serviceCards.forEach((el) => {
+//       observerCard.observe(el);
+//     });
+//   } else {
+//     serviceCards.forEach((el) => {
+//       observerCard.unobserve(el);
+//       el.classList.remove("animate__animated", "animate__slideInLeft"); // Ensure to remove classes when exiting mobile view
+//     });
+//   }
+// }
 
 // Check and observe initially
 checkAndObserve();
