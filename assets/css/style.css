@@ -480,12 +480,20 @@ a {
 \*-----------------------------------*/
 
 .hero {
-  /* background: var(--cultured-2); */
   background-image: url("../images/constructionBG.jpg");
-  background-size: cover; /* Ensures the image covers the entire element */
+  background-size: cover;
   background-position: center bottom;
-  /* padding-block: var(--section-padding); */
   padding-block: 150px;
+}
+
+/* Additional styles */
+.hero {
+  /* Add vendor prefixes for broader browser compatibility */
+  background-image: url("../images/constructionBG.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  padding-block: 150px;
+  /* Other styles */
 }
 
 .hero-content {
