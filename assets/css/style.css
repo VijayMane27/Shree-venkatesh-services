@@ -376,7 +376,7 @@ a {
 }
 
 .navbar {
-  background: var(--white);
+  background: var(--alice-blue);
   position: fixed;
   top: 0;
   left: -310px;
@@ -506,20 +506,48 @@ a {
 
 .hero-subtitle span {
   /* color: var(--dark-jungle-green); */
-  color: whitesmoke;
-  font-size: var(--fs-5);
+  color: #F2F5FE;
+  font-size: 18px;
   font-weight: var(--fw-700);
 }
 
 .hero-title {
   margin-bottom: 20px;
-  color: #d3d3d3 !important;
+  color: #F2F5FE;
+  text-align: left;
+  font-size: 65px; /* Apply font size of h1 */
+  line-height: 1;
+  font-family: 'Rajdhani', sans-serif;
+  background: -webkit-linear-gradient(transparent, transparent), url(http://html5book.ru/wp-content/uploads/2016/08/bubbles.png) repeat;
+  background-size: 200px auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; /* Standard property */
+  animation: background 10s infinite linear;
 }
+
+@keyframes background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200px 0;
+  }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .hero-title {
+    white-space: normal; /* Allow text to wrap for mobile view */
+    font-size: 40px; /* Adjust font size for better display on mobile */
+  }
+}
+
 
 .hero-text {
   /* color: var(--cadet); */
-  color: #d3d3d3;
-  font-size: var(--fs-5);
+  color: #F2F5FE;
+  font-size: 18px;
   line-height: 1.8;
   padding-left: 15px;
   border-left: 1px solid;
@@ -533,8 +561,8 @@ a {
 
 .about {
   padding-block: var(--section-padding);
+  overflow-x: hidden; /* Remove horizontal scrolling */
 }
-
 .about-banner {
   position: relative;
   margin-bottom: 40px;
@@ -616,12 +644,43 @@ a {
   --text-transform: uppercase;
 }
 
+.animation-slide-left {
+  opacity: 0;
+  transform: translateX(-180px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animation-slide-right {
+  opacity: 0;
+  transform: translateX(180px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animation-slide-left.animate,
+.animation-slide-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
 
+/* Define the animation */
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .service {
-  background: var(--cultured-2);
+  background: var(--alice-blue);
   padding-block: var(--section-padding);
 }
 
@@ -653,7 +712,7 @@ a {
 .service-card .card-icon img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   margin-bottom: 10px;
   border-radius: 10px; /* Makes the image corners rounded */
 }
@@ -701,6 +760,14 @@ a {
 .service-card:is(:hover, :focus)::after {
   width: 100%;
 }
+
+/* Apply the animation to the title, text, and button */
+.service-card:hover .card-title,
+.service-card:hover .card-text,
+.service-card:hover .card-link {
+  animation: slideFromBottom 0.5s ease forwards;
+}
+
 
 /*-----------------------------------*\
   #BLOG
