@@ -123,6 +123,7 @@ body {
   background: var(--alice-blue);
   overflow-x: hidden;
   position: relative;
+  font-family: var(--ff-nunito-sans);
 }
 
 ::-webkit-scrollbar {
