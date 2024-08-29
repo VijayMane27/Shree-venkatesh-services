@@ -59,6 +59,7 @@ dropdownToggle.forEach((item) => {
     e.preventDefault(); // Prevent default navigation behavior
     this.parentElement.classList.toggle("active"); // Toggle the active class
     elemToggleFunc(navbar);
+    elemToggleFunc(overlay);
   });
 });
 
