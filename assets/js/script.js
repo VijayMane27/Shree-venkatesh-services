@@ -56,8 +56,7 @@ const dropdownToggle = document.querySelectorAll(".navbar-item.dropdown");
 
 dropdownToggle.forEach((item) => {
   item.addEventListener("click", function (e) {
-    e.preventDefault(); // Prevent default navigation behavior
-    this.parentElement.classList.toggle("active"); // Toggle the active class
+    this.parentElement.classList.toggle("active");
     elemToggleFunc(navbar);
     elemToggleFunc(overlay);
   });

@@ -447,9 +447,10 @@ a {
 
 .dropdown-link {
   padding: 10px 20px;
-  font-size: var(--fs-6);
+  font-size: var(--ff-nunito-sans);
   text-transform: none;
   display: block;
+  color: var(--black);
 }
 
 .dropdown-link:hover {
