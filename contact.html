@@ -102,6 +102,8 @@
         border-bottom: 2px solid rgba(0, 0, 0, 0.12);
       }
 
+      .input-data input:not(:placeholder-shown) ~ label,
+      .textarea textarea:not(:placeholder-shown) ~ label,
       .input-data input:focus ~ label,
       .textarea textarea:focus ~ label,
       .input-data input:valid ~ label,
@@ -109,6 +111,21 @@
         transform: translateY(-20px);
         font-size: 14px;
         color: #3498db;
+      }
+
+      .input-data input:invalid:not(:focus) ~ label,
+      .textarea textarea:invalid:not(:focus) ~ label {
+        color: #3498db; /* Or any color to indicate invalid input */
+      }
+
+      /* Ensure the underline is correctly triggered */
+      .input-data input:focus ~ .underline:before,
+      .input-data input:not(:placeholder-shown) ~ .underline:before,
+      .input-data input:valid ~ .underline:before,
+      .textarea textarea:focus ~ .underline:before,
+      .textarea textarea:not(:placeholder-shown) ~ .underline:before,
+      .textarea textarea:valid ~ .underline:before {
+        transform: scale(1);
       }
 
       .textarea textarea {
