@@ -51,21 +51,30 @@ window.addEventListener("scroll", function () {
     : header.classList.remove("active");
 });
 
+// Toggle dropdown on click for mobile
+const dropdownToggle = document.querySelectorAll(".navbar-item.dropdown");
+
+dropdownToggle.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent default navigation behavior
+    this.parentElement.classList.toggle("active"); // Toggle the active class
+    elemToggleFunc(navbar);
+  });
+});
+
 // Anurag's Code
 const animation_from_left_elements = document.querySelectorAll(".hero-content");
 
 const observer = new IntersectionObserver(
-  (entries) => {
+  (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("animate__animated", "animate__backInLeft");
-      } else {
-        setTimeout(() => {
-          entry.target.classList.remove(
-            "animate__animated",
-            "animate__backInLeft"
-          );
-        }, 1000);
+        entry.target.classList.add(
+          "animate__animated",
+          "animate__bounceInDown"
+        );
+        // Stop observing once the animation has been triggered
+        observer.unobserve(entry.target);
       }
     });
   },
@@ -83,14 +92,12 @@ const animation_slide_left = document.querySelector(".animation-slide-left");
 const animation_slide_right = document.querySelector(".animation-slide-right");
 
 const observerSlideLeft = new IntersectionObserver(
-  (entries) => {
+  (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("animate");
-      } else {
-        setTimeout(() => {
-          entry.target.classList.remove("animate");
-        }, 1000);
+        // Stop observing once the animation has been triggered
+        observer.unobserve(entry.target);
       }
     });
   },
@@ -101,5 +108,3 @@ const observerSlideLeft = new IntersectionObserver(
 
 observerSlideLeft.observe(animation_slide_left);
 observerSlideLeft.observe(animation_slide_right);
-
-

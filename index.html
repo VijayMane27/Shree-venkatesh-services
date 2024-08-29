@@ -1,755 +1,954 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shree Venkatesh Construction and Services</title>
-  <!-- Video js -->
-  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-  <script defer src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-  <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet">
-  <!-- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shree Venkatesh Construction Services</title>
+    <!-- Video js -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <script defer src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+      rel="stylesheet"
+    />
+    <!-- 
     - custom js link
   -->
-  <script defer src="./assets/js/script.js"></script>
+    <script defer src="./assets/js/script.js"></script>
 
-  <!-- 
+    <!-- 
     - Animation library
   -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <!-- 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
+    <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- 
+    <!-- 
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Image Preload -->
-  <link rel="preload" href="./assets/images/constructionBG.jpg" as="image">
+    <!-- Image Preload -->
+    <link rel="preload" href="./assets/images/constructionBG.jpg" as="image" />
+  </head>
 
-
-</head>
-
-<body>
-
-  
-
-
-  <!-- 
+  <body>
+    <!-- 
     - #HEADER
   -->
 
-  <header class="header" data-header>
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
 
-    <div class="overlay" data-overlay></div>
-
-    <div class="header-top">
-      <div class="container">
-
-        <ul class="header-top-list">
-
-          <li>
-            <a href="mailto:srivenkateshconstruction83@gmail.com" class="header-top-link">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <span>srivenkateshconstruction83@gmail.com</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://maps.app.goo.gl/f82A1rNSnERLrjED7" class="header-top-link" target="_blank">
-              <ion-icon name="location-outline"></ion-icon>
-
-              <address>Budhgaon, Sangli(Maharashtra)</address>
-            </a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <ul class="header-top-social-list">
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="header-top-social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.png" alt="Homeverse logo">
-        </a>
-
-        <nav class="navbar" data-navbar>
-
-          <div class="navbar-top">
-
-            <a href="#" class="logo">
-              <img src="./assets/images/logo.png" alt="Homeverse logo">
-            </a>
-
-            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </div>
-
-          <div class="navbar-bottom">
-            <ul class="navbar-list">
-
-              <li>
-                <a href="#home" class="navbar-link" data-nav-link>Home</a>
-              </li>
-
-              <li>
-                <a href="#about" class="navbar-link" data-nav-link>About</a>
-              </li>
-
-              <li>
-                <a href="#service" class="navbar-link" data-nav-link>Service</a>
-              </li>
-   
-              <li>
-                <a href="#blog" class="navbar-link" data-nav-link>Videos</a>
-              </li>
-
-              <li>
-                <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-
-    <div class="header-bottom-actions">
-      <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
-        <ion-icon name="menu-outline"></ion-icon>
-        <span>Menu</span>
-      </button>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
+      <div class="header-top">
         <div class="container">
-
-          <div class="hero-content">
-
-            <p class="hero-subtitle">
-              <ion-icon name="home"></ion-icon>
-
-              <span>Construction and Services</span>
-            </p>
-
-            <h2 class="h1 hero-title">Absolute Concrete Cutting</h2>
-
-            <p class="hero-text">
-              Professional concrete cutting services provide precise and efficient solutions for your construction and renovation needs, utilizing advanced equipment for clean and accurate cuts. Trust our experienced team to handle projects of any scale with minimal disruption and maximum safety.
-          </p>          
-
-            <button class="btn" onclick="window.location.href='./contact.html'">Make An Enquiry</button>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" id="about">
-        <div class="container">
-      
-          <figure class="about-banner animation-slide-left">
-            <img src="./assets/images/ConstructionAbout1.png" alt="House interior" loading="lazy">
-          </figure>
-      
-          <div class="about-content animation-slide-right">
-            <p class="section-subtitle">About Us</p>
-            <h3 class="h3 section-title">The Leading Construction and Services Company</h3>
-            <p class="about-text">
-              Over 100 people work for us across more than 28 states. This extensive national coverage, combined with our specialist services, sets us apart in the construction and services industry.
-            </p>
-            <p class="about-text">
-              We, Shree Venkatesh Construction Services, situated at Budhgaon, Sangli, Maharashtra, are engaged in supplying a wide range of excavators, earthmoving machinery and construction equipment on hire. From single machines to complete fleets of vehicles, we are expert in supplying reliable affordable machinery. We also provide quality core cutting, drilling and demolition services to our honored patrons. We have expertise for supplying machinery to key industries and can help your organization get moving on infrastructure and mining projects. The focus has always been to deliver reliable and highly productive machinery. We aim to continuously pursue high levels of customer satisfaction and have always been supportive in addressing customer concerns.
-            </p>
-            <a href="#service" class="btn">Our Services</a>
-          </div>
-      
-        </div>
-      </section>
-      
-
-      <!-- 
-        - #SERVICE
-      -->
-
-      <section class="service" id="service">
-       
-        <div class="container">
-
-          <p class="section-subtitle">Our Services</p>
-
-          <h2 class="h2 section-title">Our Main Focus</h2>
-
-          <ul class="service-list">
-
+          <ul class="header-top-list">
             <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/core_cutting.jpg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                  
-                    Core Cutting Contractors
-                 
-                </h3>
-
-                <p class="card-text">
-                  We provide Core Cutting professional Contractors for commercial, industrial and residential contracts.
-                </p>
-
-                <a href="./contact.html?service=Core%20Cutting%20Contractors" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-                
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/breaker_work.jpg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                 
-                   Breaker Work
-                 
-                </h3>
-
-                <p class="card-text">
-                  We offer expert breaker work services for commercial, industrial, and residential projects, ensuring precise and efficient demolition and concrete removal.
-                </p>
-
-                <a href="./contact.html?service=Breaker%20Work" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/Building_demolitoin.jpg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                    Building Demolitoin
-                </h3>
-
-                <p class="card-text">
-                  Our skilled team specializes in comprehensive building demolition services, catering to commercial, industrial, and residential projects with precision and safety expertise.
-                </p>
-
-                <a href="./contact.html?service=Building%20Demolitoin" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/Diamond_wire_saw.jpg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">  
-                  Diamond Wire Saw
-                </h3>
-
-                <p class="card-text">
-                  With cutting-edge Diamond Wire Saw services, we deliver unparalleled precision and efficiency, ensuring superior results in construction and industrial projects.
-                </p>
-
-                <a href="./contact.html?service=Diamond%20Wire%20Saw" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/Floor_cutting_work.jpg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                    Floor Cutting Work
-                </h3>
-
-                <p class="card-text">
-                  Our floor cutting specialists deliver precise and efficient services for commercial, industrial, and residential projects, ensuring smooth and accurate results.
-                </p>
-
-                <a href="./contact.html?service=Floor%20Cutting%20Work" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/concrete-groove-cutting-work.jpeg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                    Concrete Groove Cutting Work
-                </h3>
-
-                <p class="card-text">
-                  Specializing in concrete groove cutting, our skilled contractors deliver tailored solutions for projects, ensuring precision and efficiency every step of the way.
-                </p>
-
-                <a href="./contact.html?service=Concrete%20Groove%20Cutting%20Work" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/Pressure_Grouting.jpeg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                    Pressure Grouting
-                </h3>
-
-                <p class="card-text">
-                  Offering top-tier pressure grouting services, our expert team delivers tailored solutions for commercial, industrial, and residential projects, guaranteeing strength, stability, and durability for your structures.
-                </p>
-
-                <a href="./contact.html?service=Pressure%20Grouting" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/Rebaring work.jpg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                    Rebaring work
-                </h3>
-
-                <p class="card-text">
-                  Providing superior rebaring services, our skilled professionals ensure structural integrity and longevity for commercial, industrial, and residential projects, delivering precision and reliability in every task.
-                </p>
-
-                <a href="./contact.html?service=Rebaring%20work" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="service-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/wallsaw_cutting_work.jpg" alt="Service icon" loading="lazy">
-                </div>
-
-                <h3 class="h3 card-title">
-                    Wallsaw Cutting Work
-                </h3>
-
-                <p class="card-text">
-                 Delivering expert wallsaw cutting services, our specialized team ensures precise and efficient cutting for commercial, industrial, and residential projects, tailored to your specific needs for seamless results.
-                </p>
-
-                <a href="./contact.html?service=Wallsaw%20Cutting%20Work" class="card-link">
-                  <span>Make An Enquiry</span>
-                  <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    <!-- 
-        - #BLOG
-      -->
-
-      <section class="blog" id="blog">
-        <div class="container">
-          <p class="section-subtitle">Work Videos</p>
-          <h2 class="h2 section-title">Latest Video Feeds</h2>
-          <ul class="blog-list has-scrollbar">
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner">
-                  <video id="my-video1" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
-                    <source src="./assets/images/video1.mp4" type="video/mp4">
-                  </video>
-                </figure>
-                <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
-                <div class="blog-content">
-                  <div class="blog-content-top">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <h3 class="h3 blog-title">
-                      <a href="#">Work at Sangli</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner">
-                  <video id="my-video2" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
-                    <source src="./assets/images/video2.mp4" type="video/mp4">
-                  </video>
-                </figure>
-                <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
-                <div class="blog-content">
-                  <div class="blog-content-top">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <h3 class="h3 blog-title">
-                      <a href="#">Work at Sangli</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-                <figure class="card-banner">
-                  <video id="my-video" muted class="w-100 my-video video-js vjs-theme-forest" controls width="100%" >
-                    <source src="./assets/images/video3.mp4" type="video/mp4">
-                  </video>
-                </figure>
-                <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
-                <div class="blog-content">
-                  <div class="blog-content-top">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-meta-link">
-                          <ion-icon name="person"></ion-icon>
-                          <span>by: Admin</span>
-                        </a>
-                      </li>
-                    </ul>
-                    <h3 class="h3 blog-title">
-                      <a href="#">Work at Sangli</a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </li>
-    </ul>
-
-  </div>
-</section>
-    </article>
-  </main>
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-light.png" alt="Homeverse logo">
-          </a>
-
-          <p class="section-text">
-            We aim to continuously pursue high levels of customer satisfaction and have always been supportive in addressing customer concerns.
-          </p>
-
-          <ul class="contact-list">
-
-            <li>
-              <a href="https://maps.app.goo.gl/f82A1rNSnERLrjED7" class="contact-link" target="_blank">
-                <ion-icon name="location-outline"></ion-icon>
-
-                <span>Budhgaon, Sangli(Maharashtra)</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="tel:+91-9423872279" class="contact-link">
-                <ion-icon name="call-outline"></ion-icon>
-
-                <span>+91-9423872279</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="mailto:srivenkateshconstruction83@gmail.com" class="contact-link">
+              <a
+                href="mailto:srivenkateshconstruction83@gmail.com"
+                class="header-top-link"
+              >
                 <ion-icon name="mail-outline"></ion-icon>
 
                 <span>srivenkateshconstruction83@gmail.com</span>
               </a>
             </li>
 
-          </ul>
-
-          <ul class="social-list">
-
             <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+              <a
+                href="https://maps.app.goo.gl/f82A1rNSnERLrjED7"
+                class="header-top-link"
+                target="_blank"
+              >
+                <ion-icon name="location-outline"></ion-icon>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
+                <address>Budhgaon, Sangli(Maharashtra)</address>
               </a>
             </li>
           </ul>
 
+          <div class="wrapper">
+            <ul class="header-top-social-list">
+              <li>
+                <a href="#" class="header-top-social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="header-top-social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="header-top-social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
 
-        <div class="footer-link-box">
+      <div class="header-bottom">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="Homeverse logo" />
+          </a>
 
-          <ul class="footer-list">
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.png" alt="Homeverse logo" />
+              </a>
 
-            <li>
-              <p class="footer-list-title">Company</p>
-            </li>
+              <button
+                class="nav-close-btn"
+                data-nav-close-btn
+                aria-label="Close Menu"
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
 
-            <li>
-              <a href="#home" class="footer-link">Home</a>
-            </li>
+            <div class="navbar-bottom">
+              <ul class="navbar-list">
+                <li>
+                  <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                </li>
 
+                <li>
+                  <a href="#about" class="navbar-link" data-nav-link>About</a>
+                </li>
 
-            <li>
-              <a href="#about" class="footer-link">About</a>
-            </li>
+                <li class="navbar-item dropdown">
+                  <a class="navbar-link dropdown-toggle" data-nav-link
+                    >Service</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="./core-cutting.html" class="dropdown-link"
+                        >Core Cutting</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./floor-cutting.html" class="dropdown-link"
+                        >Floor Cutting</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./wall-sawing.html" class="dropdown-link"
+                        >Wall Sawing</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./rebaring.html" class="dropdown-link"
+                        >Rebaring</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./grouting.html" class="dropdown-link"
+                        >Pressure Grouting</a
+                      >
+                    </li>
+                  </ul>
+                </li>
 
-            <li>
-              <a href="#blog" class="footer-link">Videos</a>
-            </li>
+                <li>
+                  <a href="#blog" class="navbar-link" data-nav-link>Videos</a>
+                </li>
 
-            <li>
-              <a href="https://maps.app.goo.gl/f82A1rNSnERLrjED7" class="footer-link" target="_blank">Locations Map</a>
-            </li>
-
-            <li>
-              <a href="./contact.html" class="footer-link">Contact us</a>
-            </li>
-
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Services</p>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Core Cutting Contractors</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Breaker Work</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Building Demolitoin</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link"> Diamond Wire Saw</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Floor Cutting Work</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Concrete Groove Cutting Work</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Pressure Grouting</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Rebaring work</a>
-            </li>
-
-            <li>
-              <a href="#service" class="footer-link">Wallsaw Cutting Work</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Customer Care</p>
-            </li>
-
-            <li>
-              <a href="mailto:srivenkateshconstruction83@gmail.com" class="footer-link">Mail</a>
-            </li>
-
-            <li>
-              <a href="tel:+91-9423872279" class="footer-link">Call</a>
-            </li>
-
-            <li>
-              <a href="./contact.html" class="footer-link">Contact us</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms & Conditions</a>
-            </li>
-
-          </ul>
-
+                <li>
+                  <a href="./contact.html" class="navbar-link" data-nav-link
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2024 <a href="#">Shree Venkatesh Construction and Services</a>. All Rights Reserved
-        </p>
-
+      <div class="header-bottom-actions">
+        <button
+          class="header-bottom-actions-btn"
+          data-nav-open-btn
+          aria-label="Open Menu"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+          <span>Menu</span>
+        </button>
       </div>
-    </div>
+    </header>
 
-  </footer>
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
 
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero-content">
+              <p class="hero-subtitle">
+                <ion-icon name="home"></ion-icon>
 
-  
+                <span>Construction Services</span>
+              </p>
 
+              <h2 class="h1 hero-title">Absolute Concrete Cutting</h2>
 
+              <p class="hero-text">
+                Professional concrete cutting services provide precise and
+                efficient solutions for your construction and renovation needs,
+                utilizing advanced equipment for clean and accurate cuts. Trust
+                our experienced team to handle projects of any scale with
+                minimal disruption and maximum safety.
+              </p>
 
-  
+              <button
+                class="btn"
+                onclick="window.location.href='./contact.html'"
+              >
+                Make An Enquiry
+              </button>
+            </div>
+          </div>
+        </section>
 
-  <!-- 
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="about" id="about">
+          <div class="container">
+            <figure class="about-banner animation-slide-left">
+              <img
+                src="./assets/images/ConstructionAbout1.png"
+                alt="House interior"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="about-content animation-slide-right">
+              <p class="section-subtitle">About Us</p>
+              <h3 class="h3 section-title">
+                The Leading Construction Services Company
+              </h3>
+              <p class="about-text">
+                Over 100 people work for us across more than 28 states. This
+                extensive national coverage, combined with our specialist
+                services, sets us apart in the construction services industry.
+              </p>
+              <p class="about-text">
+                We, Shree Venkatesh Construction Services, situated at Budhgaon,
+                Sangli, Maharashtra, are engaged in supplying a wide range of
+                excavators, earthmoving machinery and construction equipment on
+                hire. From single machines to complete fleets of vehicles, we
+                are expert in supplying reliable affordable machinery. We also
+                provide quality core cutting, drilling and demolition services
+                to our honored patrons. We have expertise for supplying
+                machinery to key industries and can help your organization get
+                moving on infrastructure and mining projects. The focus has
+                always been to deliver reliable and highly productive machinery.
+                We aim to continuously pursue high levels of customer
+                satisfaction and have always been supportive in addressing
+                customer concerns.
+              </p>
+              <a href="#service" class="btn">Our Services</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="service" id="service">
+          <div class="container">
+            <p class="section-subtitle">Our Services</p>
+
+            <h2 class="h2 section-title">Our Services</h2>
+
+            <ul class="service-list">
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/core_cutting.jpg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Core Cutting Contractors</h3>
+
+                  <p class="card-text">
+                    We provide Core Cutting professional Contractors for
+                    commercial, industrial and residential contracts.
+                  </p>
+
+                  <a href="./services/core-cutting.html" class="card-link">
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/breaker_work.jpg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Breaker Work</h3>
+
+                  <p class="card-text">
+                    We offer expert breaker work services for commercial,
+                    industrial, and residential projects, ensuring precise and
+                    efficient demolition and concrete removal.
+                  </p>
+
+                  <a href="./services/breaker-work.html" class="card-link">
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/Building_demolitoin.jpg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Building Demolitoin</h3>
+
+                  <p class="card-text">
+                    Our skilled team specializes in comprehensive building
+                    demolition services, catering to commercial, industrial, and
+                    residential projects with precision and safety expertise.
+                  </p>
+
+                  <a
+                    href="./services/building-demolition.html"
+                    class="card-link"
+                  >
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/Diamond_wire_saw.jpg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Diamond Wire Saw</h3>
+
+                  <p class="card-text">
+                    With cutting-edge Diamond Wire Saw services, we deliver
+                    unparalleled precision and efficiency, ensuring superior
+                    results in construction and industrial projects.
+                  </p>
+
+                  <a href="./services/diamond-wire-saw.html" class="card-link">
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/Floor_cutting_work.jpg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Floor Cutting Work</h3>
+
+                  <p class="card-text">
+                    Our floor cutting specialists deliver precise and efficient
+                    services for commercial, industrial, and residential
+                    projects, ensuring smooth and accurate results.
+                  </p>
+
+                  <a
+                    href="./services/floor-cutting-service.html"
+                    class="card-link"
+                  >
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/concrete-groove-cutting-work.webp"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Concrete Groove Cutting Work</h3>
+
+                  <p class="card-text">
+                    Specializing in concrete groove cutting, our skilled
+                    contractors deliver tailored solutions for projects,
+                    ensuring precision and efficiency every step of the way.
+                  </p>
+
+                  <a
+                    href="./services/concrete-groove-cutting.html"
+                    class="card-link"
+                  >
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/Pressure_Grouting.jpeg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Pressure Grouting</h3>
+
+                  <p class="card-text">
+                    Offering top-tier pressure grouting services, our expert
+                    team delivers tailored solutions for commercial, industrial,
+                    and residential projects, guaranteeing strength, stability,
+                    and durability for your structures.
+                  </p>
+
+                  <a
+                    href="./services/pressure-grounting.html"
+                    class="card-link"
+                  >
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/Rebaring work.jpg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Rebaring work</h3>
+
+                  <p class="card-text">
+                    Providing superior rebaring services, our skilled
+                    professionals ensure structural integrity and longevity for
+                    commercial, industrial, and residential projects, delivering
+                    precision and reliability in every task.
+                  </p>
+
+                  <a href="./services/reabaring-work.html" class="card-link">
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/wallsaw_cutting_work.jpg"
+                      alt="Service icon"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <h3 class="h3 card-title">Wallsaw Cutting Work</h3>
+
+                  <p class="card-text">
+                    Delivering expert wallsaw cutting services, our specialized
+                    team ensures precise and efficient cutting for commercial,
+                    industrial, and residential projects, tailored to your
+                    specific needs for seamless results.
+                  </p>
+
+                  <a href="./services/reabaring-work.html" class="card-link">
+                    <span>Make An Enquiry</span>
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="blog" id="blog">
+          <div class="container">
+            <p class="section-subtitle">Work Videos</p>
+            <h2 class="h2 section-title">Latest Video Feeds</h2>
+            <ul class="blog-list has-scrollbar">
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <video
+                      id="my-video1"
+                      muted
+                      class="w-100 my-video video-js vjs-theme-forest"
+                      controls
+                      width="100%"
+                    >
+                      <source
+                        src="./assets/images/video1.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </figure>
+                  <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
+                  <div class="blog-content">
+                    <div class="blog-content-top">
+                      <ul class="card-meta-list">
+                        <li>
+                          <p class="card-meta-link">
+                            <ion-icon name="person"></ion-icon>
+                            <span>by: Admin</span>
+                          </p>
+                        </li>
+                      </ul>
+                      <h3 class="h3 blog-title">
+                        <p>CORE CUTTING</p>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <video
+                      id="my-video2"
+                      muted
+                      class="w-100 my-video video-js vjs-theme-forest"
+                      controls
+                      width="100%"
+                    >
+                      <source
+                        src="./assets/images/video2.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </figure>
+                  <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
+                  <div class="blog-content">
+                    <div class="blog-content-top">
+                      <ul class="card-meta-list">
+                        <li>
+                          <p class="card-meta-link">
+                            <ion-icon name="person"></ion-icon>
+                            <span>by: Admin</span>
+                          </p>
+                        </li>
+                      </ul>
+                      <h3 class="h3 blog-title">
+                        <p>CORE CUTTING</p>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <video
+                      id="my-video"
+                      muted
+                      class="w-100 my-video video-js vjs-theme-forest"
+                      controls
+                      width="100%"
+                    >
+                      <source
+                        src="./assets/images/video3.mp4"
+                        type="video/mp4"
+                      />
+                    </video>
+                  </figure>
+                  <!-- <img src="./assets/images/play.png" class="play-icon" alt="Play Icon"> -->
+                  <div class="blog-content">
+                    <div class="blog-content-top">
+                      <ul class="card-meta-list">
+                        <li>
+                          <p class="card-meta-link">
+                            <ion-icon name="person"></ion-icon>
+                            <span>by: Admin</span>
+                          </p>
+                        </li>
+                      </ul>
+                      <h3 class="h3 blog-title">
+                        <p>WALLSAW CUTTING WORK</p>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="container">
+          <p class="section-subtitle">Our Stats</p>
+          <h2 class="h2 subsection-title">Our Stats</h2>
+        </div>
+        <section class="stats-section bg-container">
+          <div class="container">
+            <div class="stat">
+              <h2 class="count" data-count="10">0</h2>
+              <p>YEARS IN THE BUSINESS</p>
+            </div>
+            <div class="stat">
+              <h2 class="count" data-count="100">0</h2>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h2 class="count" data-count="30">0</h2>
+              <p>EXPERIENCE TEAM</p>
+            </div>
+          </div>
+
+          <div class="infographics">
+            <p>
+              Join the growing network of companies and partners who confidently
+              choose us as their trusted partner.
+            </p>
+          </div>
+
+          <div class="slider">
+            <div class="slider-track">
+              <!-- Repeat the images to make the slider infinite -->
+              <img src="assets/images/adidas.png" alt="Brand 1" />
+              <img src="assets/images/facebook.png" alt="Brand 2" />
+              <img src="assets/images/google.png" alt="Brand 3" />
+              <img src="assets/images/nike.png" alt="Brand 4" />
+              <img src="assets/images/uber.png" alt="Brand 5" />
+
+              <!-- Duplicate the images to create the infinite loop -->
+              <img src="assets/images/adidas.png" alt="Brand 1" />
+              <img src="assets/images/facebook.png" alt="Brand 2" />
+              <img src="assets/images/google.png" alt="Brand 3" />
+              <img src="assets/images/nike.png" alt="Brand 4" />
+              <img src="assets/images/uber.png" alt="Brand 5" />
+
+              <!-- Duplicate the images to create the infinite loop -->
+              <img src="assets/images/adidas.png" alt="Brand 1" />
+              <img src="assets/images/facebook.png" alt="Brand 2" />
+              <img src="assets/images/google.png" alt="Brand 3" />
+              <img src="assets/images/nike.png" alt="Brand 4" />
+              <img src="assets/images/uber.png" alt="Brand 5" />
+
+              <!-- Duplicate the images to create the infinite loop -->
+              <img src="assets/images/adidas.png" alt="Brand 1" />
+              <img src="assets/images/facebook.png" alt="Brand 2" />
+              <img src="assets/images/google.png" alt="Brand 3" />
+              <img src="assets/images/nike.png" alt="Brand 4" />
+              <img src="assets/images/uber.png" alt="Brand 5" />
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="./assets/images/logo-light.png" alt="Homeverse logo" />
+            </a>
+
+            <p class="section-text">
+              We aim to continuously pursue high levels of customer satisfaction
+              and have always been supportive in addressing customer concerns.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/f82A1rNSnERLrjED7"
+                  class="contact-link"
+                  target="_blank"
+                >
+                  <ion-icon name="location-outline"></ion-icon>
+
+                  <span>Budhgaon, Sangli(Maharashtra)</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:+91-9423872279" class="contact-link">
+                  <ion-icon name="call-outline"></ion-icon>
+
+                  <span>+91-9423872279</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:srivenkateshconstruction83@gmail.com"
+                  class="contact-link"
+                >
+                  <ion-icon name="mail-outline"></ion-icon>
+
+                  <span>srivenkateshconstruction83@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-link-box">
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Company</p>
+              </li>
+
+              <li>
+                <a href="#home" class="footer-link">Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="footer-link">About</a>
+              </li>
+
+              <li>
+                <a href="#blog" class="footer-link">Videos</a>
+              </li>
+
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/f82A1rNSnERLrjED7"
+                  class="footer-link"
+                  target="_blank"
+                  >Locations Map</a
+                >
+              </li>
+
+              <li>
+                <a href="./contact.html" class="footer-link">Contact us</a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Services</p>
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link"
+                  >Core Cutting Contractors</a
+                >
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link">Breaker Work</a>
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link">Building Demolitoin</a>
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link"> Diamond Wire Saw</a>
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link">Floor Cutting Work</a>
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link"
+                  >Concrete Groove Cutting Work</a
+                >
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link">Pressure Grouting</a>
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link">Rebaring work</a>
+              </li>
+
+              <li>
+                <a href="#service" class="footer-link">Wallsaw Cutting Work</a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Customer Care</p>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:srivenkateshconstruction83@gmail.com"
+                  class="footer-link"
+                  >Mail</a
+                >
+              </li>
+
+              <li>
+                <a href="tel:+91-9423872279" class="footer-link">Call</a>
+              </li>
+
+              <li>
+                <a href="./contact.html" class="footer-link">Contact us</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2024
+            <a href="#">Shree Venkatesh Construction Services</a>. All Rights
+            Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const stats = document.querySelectorAll(".stat");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                countUp(entry.target.querySelector(".count"));
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        stats.forEach((stat) => {
+          observer.observe(stat);
+        });
+
+        function countUp(element) {
+          const target = +element.getAttribute("data-count");
+          const duration = 1650; // 2 seconds
+          let start = 0;
+          const increment = target / (duration / 16);
+
+          function updateCounter() {
+            start += increment;
+            if (start < target) {
+              element.textContent = Math.ceil(start) + "+";
+              requestAnimationFrame(updateCounter);
+            } else {
+              element.textContent = target + "+";
+            }
+          }
+
+          updateCounter();
+        }
+      });
+    </script>
+  </body>
 </html>

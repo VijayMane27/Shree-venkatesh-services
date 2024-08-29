@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diamond Wire Saw Services</title>
+    <style>
+      :root {
+        --dark-jungle-green: hsl(188, 63%, 7%);
+        --prussian-blue: hsl(200, 69%, 14%);
+        --raisin-black-1: hsl(227, 29%, 13%);
+        --raisin-black-2: hsl(229, 17%, 19%);
+        --yellow-green: hsl(89, 72%, 45%);
+        --orange-soda: hsl(9, 100%, 62%);
+        --cultured-1: hsl(0, 0%, 93%);
+        --cultured-2: hsl(192, 24%, 96%);
+        --misty-rose: hsl(7, 56%, 91%);
+        --alice-blue: hsl(210, 100%, 97%);
+        --seashell: hsl(8, 100%, 97%);
+        --cadet: hsl(200, 15%, 43%);
+        --white: hsl(0, 0%, 100%);
+        --black: hsl(0, 0%, 0%);
+        --opal: hsl(180, 20%, 62%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: var(--alice-blue);
+        color: var(--cadet);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header {
+        background-color: var(--white);
+        color: var(--raisin-black-2);
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        animation: fadeIn 1s ease-in-out;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      header h1 {
+        margin-top: 10px;
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 1em;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideInRight {
+        from {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      .section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 30px 0;
+        flex-wrap: wrap;
+      }
+
+      .section:nth-child(odd) .photo-card {
+        order: 1;
+        animation: slideInLeft 1s ease-in-out;
+      }
+
+      .section:nth-child(odd) .description {
+        order: 2;
+        animation: slideInRight 1s ease-in-out;
+      }
+
+      .section:nth-child(even) .photo-card {
+        order: 2;
+        animation: slideInRight 1s ease-in-out;
+      }
+
+      .section:nth-child(even) .description {
+        order: 1;
+        animation: slideInLeft 1s ease-in-out;
+      }
+
+      .photo-card {
+        background-color: var(--cultured-1);
+        border-radius: 10px;
+        margin: 25px;
+        overflow: hidden;
+        width: 45%;
+        height: 300px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .photo-card:hover {
+        transform: scale(1.05);
+      }
+
+      .photo-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .description {
+        background-color: var(--white);
+        border-radius: 10px;
+        padding: 30px;
+        width: 45%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .description h2 {
+        color: var(--orange-soda);
+        margin-bottom: 15px;
+        font-size: 2em;
+      }
+
+      .description p {
+        line-height: 1.8;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+        color: var(--dark-jungle-green);
+      }
+
+      .description:hover {
+        transform: scale(1.05);
+      }
+
+      .contact-button {
+        background-color: var(--orange-soda);
+        color: var(--white);
+        padding: 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        display: block;
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      .contact-button:hover {
+        background-color: var(--yellow-green);
+      }
+
+      footer {
+        background-color: var(--raisin-black-1);
+        color: var(--white);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column;
+          padding: 10px;
+        }
+
+        header h1 {
+          font-size: 1.5em;
+        }
+
+        .section {
+          flex-direction: column;
+          width: 100%;
+          margin: 0;
+        }
+
+        .section-odd {
+          flex-direction: column-reverse;
+        }
+
+        .photo-card,
+        .description {
+          width: 100%;
+          margin: 15px 0;
+        }
+
+        .photo-card {
+          height: 200px;
+        }
+
+        .description h2 {
+          font-size: 1.5em;
+          text-align: center;
+        }
+
+        .description p {
+          font-size: 1em;
+          line-height: 1.6;
+          text-align: center;
+        }
+
+        .contact-button {
+          width: 90%;
+          font-size: 1em;
+          padding: 10px 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 1.2em;
+        }
+
+        header p {
+          font-size: 0.9em;
+        }
+
+        .photo-card {
+          height: 200px;
+        }
+
+        .description h2 {
+          font-size: 1.3em;
+        }
+
+        .description p {
+          font-size: 0.9em;
+        }
+
+        .contact-button {
+          width: 100%;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Professional Diamond Wire Saw Services</h1>
+      <p>Precision Cutting for Demanding Projects</p>
+    </header>
+
+    <section class="section">
+      <div class="photo-card">
+        <img
+          src="../assets/images/services/diamond-wire-saw/diamond-wire-saw-service-1.jpg"
+          alt="Diamond Wire Saw Image 1"
+        />
+      </div>
+      <div class="description">
+        <h2>Accurate and Efficient Cutting</h2>
+        <p>
+          Our diamond wire saw services provide precise and efficient cutting
+          for a wide range of materials, including concrete, stone, and metal.
+          We use advanced diamond wire technology to deliver clean, smooth cuts
+          with minimal disruption.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-odd">
+      <div class="description">
+        <h2>State-of-the-Art Equipment</h2>
+        <p>
+          We invest in the latest diamond wire saw technology to ensure our
+          clients receive the best possible results. Our equipment is
+          meticulously maintained, allowing us to handle complex cutting tasks
+          with ease and precision.
+        </p>
+      </div>
+      <div class="photo-card">
+        <img
+          src="../assets/images/services/diamond-wire-saw/diamond-wire-saw-service-2.jpg"
+          alt="Diamond Wire Saw Image 2"
+        />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="photo-card">
+        <img
+          src="../assets/images/services/diamond-wire-saw/diamond-wire-saw-cutting-service-3.jpeg"
+          alt="Diamond Wire Saw Image 3"
+        />
+      </div>
+      <div class="description">
+        <h2>Expert Technicians</h2>
+        <p>
+          Our team of expert technicians brings a wealth of experience to every
+          project. We work closely with our clients to understand their
+          requirements and deliver cutting solutions that meet their needs with
+          precision and reliability.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="description"
+      style="width: 95%; text-align: center; margin-bottom: 25px"
+    >
+      <h2>Contact Us</h2>
+      <p>
+        For more information about our diamond wire saw services or to discuss
+        your project requirements, please get in touch with us. We're here to
+        provide you with the most accurate and efficient cutting solutions
+        available.
+      </p>
+      <a
+        href="../contact.html?service=Diamond%20Wire%20Saw"
+        class="contact-button"
+        >Contact Us</a
+      >
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2024 Shree Venkatesh Construction Services. All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
