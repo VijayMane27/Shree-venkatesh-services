@@ -768,7 +768,6 @@ a {
 }
 
 .service-card:hover {
-  transform: translateY(0) rotateX(10deg) rotateY(10deg); /* Added 3D rotation on hover */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
