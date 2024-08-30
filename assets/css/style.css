@@ -744,14 +744,14 @@ a {
 
 .animation-slide-left {
   opacity: 0;
-  transform: translateX(-200px);
+  transform: translateX(-180px);
   transition: opacity 0.5s, transform 0.5s;
   visibility: hidden;
 }
 
 .animation-slide-right {
   opacity: 0;
-  transform: translateX(200px);
+  transform: translateX(180px);
   transition: opacity 0.5s, transform 0.5s;
 }
 
