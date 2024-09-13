@@ -408,7 +408,7 @@ a {
 }
 
 .navbar-top .logo img {
-  width: 200px;
+  width: 250px;
 }
 
 .nav-close-btn ion-icon {
@@ -737,6 +737,11 @@ a {
   margin-bottom: 40px;
 }
 
+.about-text li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
 .about .btn {
   max-width: max-content;
   --text-transform: uppercase;
@@ -979,7 +984,7 @@ a {
   width: 200px;
   height: 100px;
   object-fit: contain;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 @keyframes scroll {
@@ -1365,6 +1370,7 @@ a {
 
   .about-text {
     max-width: 55ch;
+    text-align: justify;
   }
 
   .about-list {
@@ -1652,7 +1658,7 @@ a {
   .header.active .header-bottom {
     position: fixed;
     bottom: auto;
-    top: -94px;
+    top: -100px;
     padding-block: 20px;
     box-shadow: 0 10px 50px hsla(237, 71%, 52%, 0.2);
     animation: slideDown 0.25s ease-out forwards;
