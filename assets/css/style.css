@@ -1094,6 +1094,10 @@ a {
   margin-bottom: 68px;
 }
 
+.footer-brand .logo img {
+  height: 60px;
+}
+
 .footer .container {
   padding-inline: 30px;
 }
@@ -1111,7 +1115,7 @@ a {
   margin-bottom: 70px;
 }
 
-.footer-brand .logo {
+.footer-brand {
   margin-bottom: 15px;
 }
 

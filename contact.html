@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml" />
+    <title>Contact Us | Shree Venkatesh Construction Services</title>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -43,6 +44,19 @@
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         overflow: hidden;
+      }
+
+      .back-button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+
+      .back-button img {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
       }
 
       .contact-form {
@@ -336,6 +350,9 @@
   <body>
     <div class="contact-container">
       <div class="contact-form">
+        <div class="back-button" onclick="window.history.back()">
+          <img src="./assets/images/back-icon.svg" alt="Back" />
+        </div>
         <div class="text">Contact Us</div>
         <h4>Contact us today, and get a reply within 24 hours!</h4>
 
@@ -376,7 +393,13 @@
 
           <div class="form-row textarea">
             <div class="input-data">
-              <textarea name="message" rows="8" cols="80" required></textarea>
+              <textarea
+                id="queryTextarea"
+                name="message"
+                rows="8"
+                cols="80"
+                required
+              ></textarea>
               <br />
               <div class="underline"></div>
               <label for="">Write your message</label>
@@ -394,12 +417,13 @@
 
       <div class="map-container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15269.431972418983!2d74.58796254932219!3d16.907624291324048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc13d5e8f859e95%3A0x63513b7d8344c7e8!2sBudhgaon%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1724928473781!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.3479960432646!2d74.59347607526563!3d16.908117916434886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc13d9178924269%3A0x7e3b137d4afafde2!2sShree%20Venkatesh%20Construction%20Services!5e0!3m2!1sen!2sin!4v1727088204285!5m2!1sen!2sin&z=15"
           width="600"
           height="450"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>
@@ -431,6 +455,12 @@
       }
 
       function showSnackbar(message, type) {
+        console.log(
+          "showSnackbar called with message:",
+          message,
+          "and type:",
+          type
+        );
         const snackbar = document.createElement("div");
         snackbar.classList.add("snackbar");
         snackbar.textContent = message;
@@ -454,7 +484,11 @@
 
       window.onload = function () {
         const service = getQueryParam("service");
+
+        console.log(service);
+
         if (service) {
+          console.log(service);
           document.getElementById(
             "queryTextarea"
           ).value = `I want to enquire about the ${service} services.`;
