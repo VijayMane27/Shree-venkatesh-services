@@ -756,7 +756,7 @@ a {
 
 .animation-slide-right {
   opacity: 0;
-  transform: translateX(180px);
+  transform: translateX(160px);
   transition: opacity 0.5s, transform 0.5s;
 }
 
