@@ -689,7 +689,7 @@ a {
 }
 
 .about-text {
-  color: black;
+  color: var(--cadet);
   font-size: var(--fs-5);
   line-height: 1.7;
   margin-bottom: 30px;
@@ -1092,10 +1092,6 @@ a {
   background: var(--raisin-black-1);
   color: var(--white);
   margin-bottom: 68px;
-}
-
-.footer-brand .logo img {
-  height: 60px;
 }
 
 .footer .container {
